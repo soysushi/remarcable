@@ -1,0 +1,7 @@
+asgiref==3.11.1
+babel==2.18.0
+Django==6.0.2
+django-money==3.6.0
+py-moneyed==3.0
+sqlparse==0.5.5
+typing_extensions==4.15.0
