@@ -84,6 +84,7 @@ class Product(TimeStampedModel):
         blank=True,
         related_name="products",
     )
+    description = models.TextField(blank=True)
     # just in case we want to hide products
     is_active = models.BooleanField(default=True)
 

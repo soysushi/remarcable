@@ -1,0 +1,860 @@
+[
+  {
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
+      "name": "Conduit & Fittings",
+      "slug": "conduit-fittings",
+      "description": "EMT, rigid, PVC conduit and associated fittings for electrical installations.",
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
+      "name": "Wire & Cable",
+      "slug": "wire-cable",
+      "description": "Building wire, THHN, Romex, MC cable, and specialty conductors.",
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
+      "name": "Panels & Breakers",
+      "slug": "panels-breakers",
+      "description": "Load centers, panelboards, circuit breakers, and disconnects.",
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 4,
+    "fields": {
+      "name": "Boxes & Enclosures",
+      "slug": "boxes-enclosures",
+      "description": "Junction boxes, pull boxes, NEMA-rated enclosures, and device boxes.",
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 5,
+    "fields": {
+      "name": "Lighting",
+      "slug": "lighting",
+      "description": "LED fixtures, high-bay lights, emergency lighting, and lamps.",
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 6,
+    "fields": {
+      "name": "Power Tools",
+      "slug": "power-tools",
+      "description": "Drills, saws, benders, and other power tools for electrical work.",
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 7,
+    "fields": {
+      "name": "Safety & PPE",
+      "slug": "safety-ppe",
+      "description": "Personal protective equipment, arc flash gear, and safety supplies.",
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 8,
+    "fields": {
+      "name": "Switches & Receptacles",
+      "slug": "switches-receptacles",
+      "description": "Wall switches, outlets, GFCI receptacles, and cover plates.",
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.tag",
+    "pk": 1,
+    "fields": {
+      "name": "Commercial",
+      "slug": "commercial",
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.tag",
+    "pk": 2,
+    "fields": {
+      "name": "Residential",
+      "slug": "residential",
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.tag",
+    "pk": 3,
+    "fields": {
+      "name": "Industrial",
+      "slug": "industrial",
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.tag",
+    "pk": 4,
+    "fields": {
+      "name": "Prefab",
+      "slug": "prefab",
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.tag",
+    "pk": 5,
+    "fields": {
+      "name": "High Voltage",
+      "slug": "high-voltage",
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.tag",
+    "pk": 6,
+    "fields": {
+      "name": "Low Voltage",
+      "slug": "low-voltage",
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.tag",
+    "pk": 7,
+    "fields": {
+      "name": "Data Center",
+      "slug": "data-center",
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.tag",
+    "pk": 8,
+    "fields": {
+      "name": "Job Site Essential",
+      "slug": "job-site-essential",
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+      "name": "3/4\" EMT Conduit 10ft Stick",
+      "slug": "three-quarter-emt-conduit-10ft",
+      "price": "3.85",
+      "price_currency": "USD",
+      "category": 1,
+      "tags": [
+        1,
+        2,
+        8
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+      "name": "1\" EMT Conduit 10ft Stick",
+      "slug": "one-inch-emt-conduit-10ft",
+      "price": "6.50",
+      "price_currency": "USD",
+      "category": 1,
+      "tags": [
+        1,
+        2,
+        8
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+      "name": "1\" Rigid Conduit 10ft",
+      "slug": "one-inch-rigid-conduit-10ft",
+      "price": "18.75",
+      "price_currency": "USD",
+      "category": 1,
+      "tags": [
+        3,
+        5
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+      "name": "3/4\" EMT Compression Coupling",
+      "slug": "three-quarter-emt-compression-coupling",
+      "price": "1.25",
+      "price_currency": "USD",
+      "category": 1,
+      "tags": [
+        1,
+        2,
+        4
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+      "name": "12 AWG THHN Stranded Wire - 500ft (Black)",
+      "slug": "12-awg-thhn-stranded-black-500ft",
+      "price": "62.99",
+      "price_currency": "USD",
+      "category": 2,
+      "tags": [
+        1,
+        2,
+        8
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+      "name": "10 AWG THHN Stranded Wire - 500ft (Red)",
+      "slug": "10-awg-thhn-stranded-red-500ft",
+      "price": "89.50",
+      "price_currency": "USD",
+      "category": 2,
+      "tags": [
+        1,
+        2
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+      "name": "14/2 Romex NM-B Cable - 250ft",
+      "slug": "14-2-romex-nm-b-250ft",
+      "price": "74.99",
+      "price_currency": "USD",
+      "category": 2,
+      "tags": [
+        2
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+      "name": "12/2 MC Cable - 250ft",
+      "slug": "12-2-mc-cable-250ft",
+      "price": "179.00",
+      "price_currency": "USD",
+      "category": 2,
+      "tags": [
+        1,
+        3
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+      "name": "500 MCM XHHW Aluminum - per ft",
+      "slug": "500-mcm-xhhw-aluminum-per-ft",
+      "price": "4.35",
+      "price_currency": "USD",
+      "category": 2,
+      "tags": [
+        3,
+        5,
+        7
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+      "name": "200A Main Breaker Load Center - 40 Space",
+      "slug": "200a-main-breaker-load-center-40-space",
+      "price": "189.99",
+      "price_currency": "USD",
+      "category": 3,
+      "tags": [
+        2
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+      "name": "20A Single Pole Circuit Breaker",
+      "slug": "20a-single-pole-circuit-breaker",
+      "price": "7.49",
+      "price_currency": "USD",
+      "category": 3,
+      "tags": [
+        1,
+        2,
+        8
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+      "name": "400A 3-Phase Panelboard",
+      "slug": "400a-3-phase-panelboard",
+      "price": "2450.00",
+      "price_currency": "USD",
+      "category": 3,
+      "tags": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+      "name": "200A Fused Disconnect Switch",
+      "slug": "200a-fused-disconnect-switch",
+      "price": "275.00",
+      "price_currency": "USD",
+      "category": 3,
+      "tags": [
+        1,
+        3,
+        5
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 14,
+    "fields": {
+      "name": "4\" Square Junction Box - 1-1/2\" Deep",
+      "slug": "4in-square-junction-box",
+      "price": "1.89",
+      "price_currency": "USD",
+      "category": 4,
+      "tags": [
+        1,
+        2,
+        8
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 15,
+    "fields": {
+      "name": "Single Gang Old Work Box",
+      "slug": "single-gang-old-work-box",
+      "price": "0.95",
+      "price_currency": "USD",
+      "category": 4,
+      "tags": [
+        2
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 16,
+    "fields": {
+      "name": "NEMA 4X Stainless Steel Enclosure 16x12x6",
+      "slug": "nema-4x-ss-enclosure-16x12x6",
+      "price": "385.00",
+      "price_currency": "USD",
+      "category": 4,
+      "tags": [
+        3,
+        5
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 17,
+    "fields": {
+      "name": "LED High Bay Light 150W - 5000K",
+      "slug": "led-high-bay-150w-5000k",
+      "price": "89.99",
+      "price_currency": "USD",
+      "category": 5,
+      "tags": [
+        1,
+        3,
+        7
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 18,
+    "fields": {
+      "name": "2x4 LED Troffer Panel 40W",
+      "slug": "2x4-led-troffer-panel-40w",
+      "price": "54.99",
+      "price_currency": "USD",
+      "category": 5,
+      "tags": [
+        1
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 19,
+    "fields": {
+      "name": "Emergency Exit Sign with Battery Backup",
+      "slug": "emergency-exit-sign-battery-backup",
+      "price": "32.50",
+      "price_currency": "USD",
+      "category": 5,
+      "tags": [
+        1,
+        3,
+        8
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 20,
+    "fields": {
+      "name": "Temporary Job Site LED String Lights - 100ft",
+      "slug": "temp-jobsite-led-string-lights-100ft",
+      "price": "149.00",
+      "price_currency": "USD",
+      "category": 5,
+      "tags": [
+        8
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 21,
+    "fields": {
+      "name": "Milwaukee M18 1/2\" Hammer Drill Kit",
+      "slug": "milwaukee-m18-hammer-drill-kit",
+      "price": "199.00",
+      "price_currency": "USD",
+      "category": 6,
+      "tags": [
+        8
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 22,
+    "fields": {
+      "name": "DeWalt 20V Band Saw",
+      "slug": "dewalt-20v-band-saw",
+      "price": "329.00",
+      "price_currency": "USD",
+      "category": 6,
+      "tags": [
+        8
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 23,
+    "fields": {
+      "name": "Greenlee 882 Hydraulic EMT Bender",
+      "slug": "greenlee-882-hydraulic-emt-bender",
+      "price": "2899.00",
+      "price_currency": "USD",
+      "category": 6,
+      "tags": [
+        1,
+        3,
+        4
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 24,
+    "fields": {
+      "name": "Klein Tools Wire Stripper/Cutter",
+      "slug": "klein-tools-wire-stripper-cutter",
+      "price": "24.99",
+      "price_currency": "USD",
+      "category": 6,
+      "tags": [
+        8
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 25,
+    "fields": {
+      "name": "Fluke 117 True-RMS Digital Multimeter",
+      "slug": "fluke-117-true-rms-multimeter",
+      "price": "219.99",
+      "price_currency": "USD",
+      "category": 6,
+      "tags": [
+        8
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 26,
+    "fields": {
+      "name": "Arc Flash Face Shield with Hard Hat",
+      "slug": "arc-flash-face-shield-hard-hat",
+      "price": "78.99",
+      "price_currency": "USD",
+      "category": 7,
+      "tags": [
+        3,
+        5,
+        8
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 27,
+    "fields": {
+      "name": "Class 00 Insulated Rubber Gloves",
+      "slug": "class-00-insulated-rubber-gloves",
+      "price": "42.50",
+      "price_currency": "USD",
+      "category": 7,
+      "tags": [
+        8
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 28,
+    "fields": {
+      "name": "FR Rated Hi-Vis Safety Vest",
+      "slug": "fr-rated-hi-vis-safety-vest",
+      "price": "34.99",
+      "price_currency": "USD",
+      "category": 7,
+      "tags": [
+        8
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 29,
+    "fields": {
+      "name": "Voltage Detector Non-Contact Pen",
+      "slug": "voltage-detector-non-contact-pen",
+      "price": "19.99",
+      "price_currency": "USD",
+      "category": 7,
+      "tags": [
+        8
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 30,
+    "fields": {
+      "name": "20A GFCI Receptacle - Tamper Resistant",
+      "slug": "20a-gfci-receptacle-tamper-resistant",
+      "price": "18.75",
+      "price_currency": "USD",
+      "category": 8,
+      "tags": [
+        1,
+        2,
+        8
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 31,
+    "fields": {
+      "name": "15A Decora Rocker Switch - White",
+      "slug": "15a-decora-rocker-switch-white",
+      "price": "2.49",
+      "price_currency": "USD",
+      "category": 8,
+      "tags": [
+        2
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 32,
+    "fields": {
+      "name": "30A 250V Twist-Lock Receptacle",
+      "slug": "30a-250v-twist-lock-receptacle",
+      "price": "28.99",
+      "price_currency": "USD",
+      "category": 8,
+      "tags": [
+        1,
+        3
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 33,
+    "fields": {
+      "name": "2\" PVC Conduit 10ft Schedule 40",
+      "slug": "2in-pvc-conduit-10ft-schedule-40",
+      "price": "8.25",
+      "price_currency": "USD",
+      "category": 1,
+      "tags": [
+        1,
+        2
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 34,
+    "fields": {
+      "name": "6/3 Romex NM-B Cable - 125ft",
+      "slug": "6-3-romex-nm-b-125ft",
+      "price": "215.00",
+      "price_currency": "USD",
+      "category": 2,
+      "tags": [
+        2
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 35,
+    "fields": {
+      "name": "Cat6 Plenum Cable - 1000ft (Blue)",
+      "slug": "cat6-plenum-cable-1000ft-blue",
+      "price": "249.99",
+      "price_currency": "USD",
+      "category": 2,
+      "tags": [
+        1,
+        6,
+        7
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 36,
+    "fields": {
+      "name": "Prefab Conduit Rack Assembly - 4 Tier",
+      "slug": "prefab-conduit-rack-assembly-4-tier",
+      "price": "145.00",
+      "price_currency": "USD",
+      "category": 1,
+      "tags": [
+        1,
+        3,
+        4,
+        7
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 37,
+    "fields": {
+      "name": "Lockout/Tagout Electrical Kit",
+      "slug": "lockout-tagout-electrical-kit",
+      "price": "56.99",
+      "price_currency": "USD",
+      "category": 7,
+      "tags": [
+        3,
+        5,
+        8
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 38,
+    "fields": {
+      "name": "50A 3-Phase Temporary Power Distribution Spider Box",
+      "slug": "50a-3-phase-spider-box",
+      "price": "689.00",
+      "price_currency": "USD",
+      "category": 3,
+      "tags": [
+        1,
+        3,
+        8
+      ],
+      "is_active": true,
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  }
+]
