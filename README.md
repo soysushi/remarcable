@@ -10,20 +10,27 @@ A Django-based product catalog
 
 ## Quick Start
 
-### 1. Create and activate a virtual environment
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/soysushi/remarcable.git
+cd remarcable
+```
+
+### 2. Create and activate a virtual environment
 
 ```bash
 python -m venv venv
 source venv/bin/activate
 ```
 
-### 2. Install dependencies
+### 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Start the development server
+### 4. Start the development server
 
 **Note:** The database (`db.sqlite3`) is pre-populated with sample data for your convenience.
 
@@ -43,7 +50,7 @@ python manage.py runserver
 
 Then open [http://127.0.0.1:8000/products/](http://127.0.0.1:8000/products/) to browse the catalog.
 
-### 4. (Optional) Create a superuser for the admin panel
+### 5. (Optional) Create a superuser for the admin panel
 
 ```bash
 python manage.py createsuperuser
