@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 from django.db.models import Q
-from django.views.generic import DetailView, ListView
+from django.views.generic import ListView
 
 from .forms import ProductFilterForm
 from .models import Product

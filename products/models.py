@@ -93,7 +93,3 @@ class Product(TimeStampedModel):
     
     def __str__(self) -> str:
         return self.name
-    
-    # for SEO purposes
-    def get_absolute_url(self) -> str:
-        return reverse("products:product_detail", kwargs={"slug": self.slug})
