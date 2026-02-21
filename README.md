@@ -1,6 +1,6 @@
 # Remarcable Product Catalog
 
-A Django-based product catalog 
+A Django-based product catalog
 
 ## Tech Stack
 
@@ -23,21 +23,19 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 3. Run migrations
+### 3. Start the development server
+
+**Note:** The database (`db.sqlite3`) is pre-populated with sample data for your convenience.
+
+If the database file is missing or you want to reset it:
 
 ```bash
+rm db.sqlite3  # Optional: Remove existing database
 python manage.py migrate
-```
-
-### 4. Load sample data
-
-The fixture contains 38 products across 8 categories with 8 tags — realistic electrical contractor supplies (conduit, wire, panels, tools, PPE, etc.).
-
-```bash
 python manage.py loaddata sample_data
 ```
 
-### 5. Start the development server
+Start the server:
 
 ```bash
 python manage.py runserver
@@ -45,7 +43,7 @@ python manage.py runserver
 
 Then open [http://127.0.0.1:8000/products/](http://127.0.0.1:8000/products/) to browse the catalog.
 
-### 6. (Optional) Create a superuser for the admin panel
+### 4. (Optional) Create a superuser for the admin panel
 
 ```bash
 python manage.py createsuperuser
@@ -89,6 +87,15 @@ remarcable/
 - **N+1 prevention** — queries use `select_related` / `prefetch_related`
 - **Currency support** — prices stored with currency via `django-money` (USD / CAD)
 
+## Sample Data
+
+The database comes pre-populated with:
+- **8 categories** (Conduit & Fittings, Wire & Cable, Panels & Breakers, etc.)
+- **10 tags** (Commercial, Residential, Industrial, High Voltage, Low Voltage, Data Center, Prefab, Job Site Essential, Outdoor Rated, Heavy Duty)
+- **38 products** — realistic electrical contractor supplies
+
+Sample data can be reloaded via: `python manage.py loaddata sample_data`
+
 ## Sample Data Categories
 
 | Category | Example Products |
@@ -106,7 +113,6 @@ remarcable/
 
 Minimal AI assistance was used in this project:
 
-- **README**
 - **Slug generation logic** (`apps/products/signals.py`): The `generate_unique_slug()` function
 - **Frontend templates** (`base.html`, `product_list.html`): HTML structure and CSS styling
 - **Form widgets** (`apps/products/forms.py`): Bootstrap CSS classes and `CheckboxSelectMultiple` widget suggestion

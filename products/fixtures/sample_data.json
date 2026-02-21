@@ -168,6 +168,26 @@
     }
   },
   {
+    "model": "products.tag",
+    "pk": 9,
+    "fields": {
+      "name": "Outdoor Rated",
+      "slug": "outdoor-rated",
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
+    "model": "products.tag",
+    "pk": 10,
+    "fields": {
+      "name": "Heavy Duty",
+      "slug": "heavy-duty",
+      "created_at": "2026-02-21T01:00:00Z",
+      "updated_at": "2026-02-21T01:00:00Z"
+    }
+  },
+  {
     "model": "products.product",
     "pk": 1,
     "fields": {

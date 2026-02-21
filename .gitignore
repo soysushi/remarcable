@@ -9,7 +9,7 @@ venv/
 
 # Django
 *.sqlite3
-db.sqlite3
+# db.sqlite3 is committed with pre-populated sample data
 media/
 
 # IDE
